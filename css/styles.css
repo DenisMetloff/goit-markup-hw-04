@@ -414,17 +414,19 @@ img {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-
-.wwwwww {
-  display: flex;
-}
 .logo_social {
   display: flex;
+  
+  
  
 }
-.social_media {
-  width: 208px;
+.social_media { width: 235px;
   height: 80px;
+
+ 
+}
+.social_item{
+  
 }
 .social_titel {
   font-weight: 500;
@@ -433,6 +435,17 @@ img {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+}
+.social_link{
+  width: 40px;
+  height: 40px;
+}
+.social_network {
+
+ 
+  
+ 
+ 
 }
 
 /*========= portfolio======== */
