@@ -420,8 +420,11 @@ img {
 }
 .logo_social {
   display: flex;
+ 
 }
 .social_media {
+  width: 208px;
+  height: 80px;
 }
 .social_titel {
   font-weight: 500;
