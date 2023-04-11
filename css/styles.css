@@ -1,6 +1,7 @@
 /** @format */
 :root {
-  --social: #4D5AE5;
+  --section2-icon:#F4F4FD;
+  --social: #4d5ae5;
   --white: #ffffff;
   --border-width: #e7e9fc;
   --blue: #4d5ae5;
@@ -8,7 +9,7 @@
   --hover_blue: #404bbf;
   --header-info: #434455;
   --aside-white: #f4f4fd;
-  --dg-gredient: linear-gradient(  rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --dg-gredient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 body {
   font-family: open sans, sans-serif;
@@ -52,9 +53,6 @@ address {
 img {
   display: block;
 }
-
-
-
 
 /* ========= header =======*/
 .conteiner {
@@ -109,8 +107,7 @@ img {
   color: var(--grey);
 }
 
-
-.header-link:hover ,
+.header-link:hover,
 .header-link:focus {
   color: var(--hover_blue);
 }
@@ -140,9 +137,7 @@ img {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: var(--dg-gredient),
-
-    url(../images/people-office1.jpg);
+  background-image: var(--dg-gredient), url(../images/people-office1.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -209,6 +204,22 @@ img {
   letter-spacing: 0.02em;
   color: var(--header-info);
   margin: 0;
+}
+.section2_icon{
+  width: 264px;
+  height: 112px;
+  background:var(--section2-icon);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  
+
+
+}
+.svg_icon {
+  align-items: center;
 }
 
 /*======== section3 ======= */
@@ -313,8 +324,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+}
+.social_link:hover,
+.social_link:focus {
+  background: var(--grey);
 }
 
 /* ========== footer ======== */
@@ -346,6 +359,18 @@ img {
 }
 .footer_logo_text {
   width: 264px;
+}
+.social_subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color:var(--white);
+}
+
+
+.wwwwww{
+  display: flex;
 }
 
 /*========= portfolio======== */
