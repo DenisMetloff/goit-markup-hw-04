@@ -1,6 +1,9 @@
 /** @format */
 :root {
-  --customers_border: #8e8f99;
+  --hover-footer-social:
+  #31D0AA;
+  --hover-social:#404BBF;
+  --customers_border:  #8E8F99;
   --section2-icon: #f4f4fd;
   --social: #4d5ae5;
   --white: #ffffff;
@@ -143,6 +146,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team_title {
   font-size: 56px;
@@ -189,6 +194,7 @@ img {
   gap: 24px;
 }
 .section_item {
+    width: calc((100% - 72px) / 4 );
 }
 .section_title {
   font-weight: 500;
@@ -207,7 +213,6 @@ img {
   margin: 0;
 }
 .section2_icon {
-  width: 264px;
   height: 112px;
   background: var(--section2-icon);
   border-radius: 4px;
@@ -302,7 +307,7 @@ img {
   margin-bottom: 8px;
 }
 .name-position {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .social_network {
   display: flex;
@@ -311,8 +316,7 @@ img {
 }
 
 .social_item {
-  width: 40px;
-  height: 40px;
+  
 }
 .social_link {
   width: 100%;
@@ -325,7 +329,7 @@ img {
 }
 .social_link:hover,
 .social_link:focus {
-  background: var(--grey);
+  background: var(--hover-social);
 }
 
 /* =========Customers ============= */
@@ -348,13 +352,11 @@ img {
 }
 .customers_list {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 
 .customers_item {
-  width: 166px;
+  width: calc((100% - 119px) / 6);
   height: 88px;
 }
 .customers_link {
@@ -366,7 +368,7 @@ img {
   padding: 16px 32px;
   border: 1px solid var(--customers_border);
   border-radius: 4px;
-  color: var(--customers_border);
+  fill:var(--customers_border);
 }
 .customers_link:hover,
 .customers_link:focus {
@@ -420,7 +422,8 @@ img {
   
  
 }
-.social_media { width: 235px;
+.social_media 
+{ width: 208px;
   height: 80px;
 
  
@@ -441,11 +444,13 @@ img {
   height: 40px;
 }
 .social_network {
-
- 
-  
- 
- 
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social_link:hover,
+.social_link:focus{
+background:var(--hover-footer-social);
 }
 
 /*========= portfolio======== */
@@ -464,7 +469,7 @@ img {
 }
 .btn:hover,
 .btn:focus {
-  border: color var(--hover_blue);
+  border-color :var(--hover_blue);
   background-color: var(--hover_blue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -506,4 +511,11 @@ img {
 .button {
   padding-bottom: 120px;
   padding-top: 96px;
+}
+.project_card{
+  display: block;
+}
+.project_card:hover,
+.project_card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
